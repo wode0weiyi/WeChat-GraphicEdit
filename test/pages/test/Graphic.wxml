@@ -1,0 +1,3 @@
+<!--pages/test/test1.wxml-->
+<GraphicEditPage id='GraphicEditPage' contentText='{{contentText}}' bind:grapgicEditSubmit='grapgicEditSubmit' bind:graphicDeleteImg='graphicDeleteImg' bind:takePhotoSuccess='takePhotoSuccess'/>
+

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "GraphicEditPage":"/components/GraphicEdit-component/GraphicEditPage"
+  }
+}

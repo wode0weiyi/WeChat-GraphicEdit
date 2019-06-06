@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "GraphicEdit":"/components/GraphicEdit-component/GraphicEdit",
+    "ToolBar":"/components/GraphicEdit-component/ToolBar/ToolBar"
+  }
+}

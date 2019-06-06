@@ -1,0 +1,42 @@
+/* 图文编辑背景图 */
+.graphicEditBgView{
+  display: flex;
+  width: 690rpx;
+}
+/* 图文编辑内容图 */
+.contentView{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 对图文编辑的文字显示样式做调整（使用wxPrase第三方展示的时候） */
+.article-content{
+  color: #333;
+  font-size: 30rpx;
+}
+/* 去编辑页按钮 */
+.gotoEditView{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 312rpx;
+  width: 100%;
+  border: 2rpx #d8d8d8 solid
+}
+/* 去编辑页内容 */
+.gotoEditContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* 去编辑页img */
+.gotoEditContent image{
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 去编辑页text */
+.gotoEditContent text{
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ToolBar":"/components/GraphicEdit-component/ToolBar/ToolBar"
+  }
+}

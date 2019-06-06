@@ -1,0 +1,80 @@
+
+/* components/GraphicEdit-component/ToolBar/ToolBar.wxss */
+.toolBarBgView{
+display: flex;
+width: 80rpx;
+position: fixed;
+right: 30rpx;
+bottom: 50rpx;
+}
+.toolBarView{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    border: 2rpx #dbdbdb solid;
+    width: 80rpx;
+    justify-content: center;
+}
+.selectedImgView{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selectedImgView image{
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 20rpx;
+}
+.selectedImgView text{
+    color: #333333;
+    font-size: 24rpx;
+}
+.font-view{
+    display: flex;
+    margin-top: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border: 2rpx #dbdbdb solid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30rpx;
+}
+.color-view{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
+.fonts-view{
+  display: flex;
+  position: fixed;
+  right: 110rpx;
+  bottom: 150rpx;
+  height: 60rpx;
+  align-items: center;
+  border: 2rpx #dbdbdb solid;
+}
+.fonts-text{
+    margin: 10rpx;
+    text-align: center;
+    justify-content: center;
+    font-size: 24rpx;
+    color: #ff4f42 
+}
+.colors-view{
+  display: flex;
+  position: fixed;
+  right: 110rpx;
+  bottom: 70rpx;
+  height: 60rpx;
+  align-items: center;
+  border: 2rpx #dbdbdb solid;
+  max-width: 610rpx;
+}
+.colors-text{
+    width: 40rpx;
+    height: 40rpx;
+    margin: 10rpx; 
+}

@@ -1,0 +1,20 @@
+<view class='GraphicEditPageBgView'>
+  <text class='graphicLine'></text>
+  <view class='contentView'>
+    <block wx:for='{{dataAry}}' wx:key='{{item}}'>
+      <textarea class='area' style='height:{{areaHeight}}rpx;font-size:{{item.fontSize}}rpx;color:{{item.color}}' bindblur='bindblur' bindinput='bindinput' bindlinechange='bindlinechange' data-index='{{index}}' placeholder="{{(index == dataAry.length - 1) ? '请输入内容':''}}" value='{{item.value}}' auto-height="{{(index == 0 && dataAry.length == 1)?autoheight:'true'}}"
+        cursor-spacing='20' maxlength='-1' wx:if="{{item.type == 'string'}}" />
+      <view class='imgView' wx:else="{{item.type == 'image'}}">
+        <view class='img-field-view' wx:if='{{item.uploadState == -1}}' catchtap='imgUploadFieldEvent' catchtap='imgUploadAginEvent' data-index='{{index}}'>
+          <image src='./image/img_upload_field.png'/>
+          <text>图片上传失败，请点击重试</text>
+        </view>
+        <image class='img' wx:else src='{{item.imgUrl.length > 0 ? item.imgUrl : item.imgPath}}' mode='widthFix' />
+        <image class='deleteImg' src='./image/deleted.png' catchtap='deleteImg' data-index='{{index}}' />
+      </view>
+    </block>
+    <button class='submitBtn' catchtap='submit' style='background-color:{{submitBtnBgColor}}'>提交</button>
+  </view>
+  <!-- <cover-image class='takePhoto' catchtap="takePhoto" src='./image/addImg.png' /> -->
+  <ToolBar bind:selectedFont='selectedFont' bind:selectedColor='selectedColor' bind:takePhoto='takePhoto'/>
+</view>

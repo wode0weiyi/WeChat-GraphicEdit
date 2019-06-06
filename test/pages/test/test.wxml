@@ -1,0 +1,8 @@
+
+<view class='bgView'>
+  <GraphicEdit class='graphicEdit' contentText='{{contentText}}' bind:gotoEditPage='gotoEditPage'/>
+  
+  <!-- <text>udkljdklajdsjdsa
+  ajda</text> -->
+  <!-- <ToolBar /> -->
+</view>

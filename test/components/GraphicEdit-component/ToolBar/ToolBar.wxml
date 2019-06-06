@@ -1,0 +1,21 @@
+<!--components/GraphicEdit-component/ToolBar/ToolBar.wxml-->
+<view class='toolBarBgView'>
+  <view class='toolBarView'>
+    <view class='selectedImgView' catch:tap="selectedImg">
+      <image src='/images/addImage.png' />
+      <text>图片</text>
+    </view>
+    <view class="font-view" catch:tap="showFontView">{{fontSize}}</view>
+    <view class="color-view" style="background-color:{{bgColor}}" catch:tap="showColorView"></view>
+  </view>
+  <view class="fonts-view"  hidden='{{!fontIsShow}}'>
+    <block wx:for='{{fonts}}' wx:key="{{item}}">
+      <text class="fonts-text" style="color:{{item == fontSize?'#ff4f42':'#333'}}" catch:tap="selectedFont" data-item='{{item}}'>{{item}}</text>
+    </block>
+  </view>
+  <view class="colors-view" hidden='{{!colorIsShow}}'>
+    <block wx:for="{{colors}}" wx:for-item="item" wx:key="{{item}}">
+      <text class="colors-text" catch:tap="selectedColor" data-item='{{item}}' style="background-color:{{item}}"/> 
+    </block>
+  </view>
+</view>

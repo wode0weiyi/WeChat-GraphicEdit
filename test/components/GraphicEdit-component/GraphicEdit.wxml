@@ -1,0 +1,15 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class='graphicEditBgView' catchtap='_gotoEditPage'>
+
+  <view class='contentView' wx:if='{{content.length>0}}'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <view class='gotoEditView' wx:else>
+    <view class='gotoEditContent'>
+      <image src='./image/gotoEditAdd.png' />
+      <text>添加图文介绍</text>
+    </view>
+  </view>
+
+</view>

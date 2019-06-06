@@ -1,0 +1,11 @@
+
+.bgView{
+  display: flex;
+  margin: 30rpx;
+  flex-direction: column
+}
+.graphicEdit{
+  display: flex;
+  margin-top: 100rpx;
+  width: 100%;
+}
